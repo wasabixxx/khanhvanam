@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    background-color: #000000;
+    height: auto;
+    min-height: 800px;
+}
+     ::-webkit-scrollbar {
+         width: 12px;
+     }
+
+     /* Track */
+     ::-webkit-scrollbar-track {
+
+         -webkit-border-radius: 10px;
+         border-radius: 10px;
+     }
+
+     /* Handle */
+     ::-webkit-scrollbar-thumb {
+         -webkit-border-radius: 10px;
+         border-radius: 10px;
+         background: rgba(255, 0, 0, 0.8);
+
+     }
+
+     ::-webkit-scrollbar-thumb:window-inactive {
+         background: rgba(255, 0, 0, 0.4);
+     }
+
+  
+         .main::-webkit-scrollbar {
+             width: 12px;
+         }
+
+         /* Track */
+         .main::-webkit-scrollbar-track {
+
+             -webkit-border-radius: 10px;
+             border-radius: 10px;
+         }
+
+         /* Handle */
+         .main::-webkit-scrollbar-thumb {
+             -webkit-border-radius: 10px;
+             border-radius: 10px;
+             background: rgba(255, 0, 0, 0.8);
+
+         }
+
+         .main::-webkit-scrollbar-thumb:window-inactive {
+             background: rgba(255, 0, 0, 0.4);
+         }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.df {
+    display: flex;
+}
+
+.jcc{
+    justify-content: center;
+}
+.ac {
+    align-items: center;
+}
+.jcsb{
+    justify-content: space-between;
+}
+
+/* Open edit  */
+
+
+
+
+ .menu_top ul {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-end;
+     list-style: none;
+     margin: 0;
+     /* background: deepskyblue; */
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .menu_top ul li a {
+     text-decoration: none;
+     display: block;
+     padding: 1em;
+     color: white;
+ }
+.menu_top ul li img{
+    height: 35px;
+     padding: 1em;
+
+
+    /* margin-right: 50px;
+    margin-top: 10px; */
+}
+
+ .menu_top ul li a:hover {
+     background: #1565C0;
+     font-weight: 700;
+ }
+  .menu_top ul li img:hover {
+      background: #1565C0;
+  }
+
+ .menu_top > img {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+     height: 30px;
+ }
+
+
+
+ @media all and (max-width: 800px) {
+     .menu_top {
+         justify-content: space-around;
+     }
+ }
+
+ @media all and (max-width: 600px) {
+     .menu_top {
+         flex-flow: column wrap;
+         padding: 0;
+     }
+
+     .menu_top a {
+         text-align: center;
+         padding: 10px;
+         border-top: 1px solid rgba(255, 255, 255, 0.3);
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     }
+
+     .menu_top li:last-of-type a {
+         border-bottom: none;
+     }
+ }
+ /* ----------------------------------------------------------------------------------- */
+
+ #container {
+     margin: auto;
+     margin-top: 150px;
+     width: 70vw;
+     /* background-color: #1565C0; */
+     height: auto;
+    
+     
+ }
+
+ .item1-1 {
+     grid-area: header1;
+ }
+ .item1-2 {
+     grid-area: header2;
+ }
+ .item1-3 {
+     grid-area: header3;
+ }
+ .item1-4 {
+     grid-area: header4;
+ }
+ .item1-5 {
+     grid-area: header5;
+ }
+ .item2 {
+     grid-area: main;
+ }
+ .item3 {
+     grid-area: right;
+ }
+
+
+ #container .grid-container {
+     display: grid;
+     grid-template-areas:
+         'header1 header2 header3 header4 header5 '
+         ' main main main right right'
+     ;
+     grid-gap: 10px;
+     /* background-color: #2196F3; */
+     padding: 10px;
+ }
+
+ .grid-container>div {
+     background-color:rgba(190, 190, 190, 0.596);
+     text-align: center;
+     padding: 20px 0;
+     font-size: 30px;
+     border-radius: 15px;
+ }
+
+ .main {
+     height: 300px;
+ }
+
+ .top_icon {
+     background-color: antiquewhite;
+     height: 50px;
+     width: auto;
+     color: aliceblue;
+     cursor: pointer;
+ }
+
+ #container .top_icon img {
+     height: 40px;
+ }
+ #container .top_icon span {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+ 
+
+
+
